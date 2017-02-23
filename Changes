@@ -2,3 +2,7 @@ Revision history for Math-Partition-Rand
 
 0.01
     - Minted by Dist::Zilla.
+
+{{$NEXT}}
+    - Refactored to return a list of numbers, instead of a hash.
+    - Fixed up documentation.
