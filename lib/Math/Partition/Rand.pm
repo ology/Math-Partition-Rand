@@ -2,7 +2,7 @@ package Math::Partition::Rand;
 
 # ABSTRACT: Partition a number into addition sequences
 
-our $VERSION = '0.02';
+our $VERSION = '0.03';
 
 use strict;
 use warnings;
@@ -53,7 +53,7 @@ sub new {
 
 =head2 choose()
 
-  @vector = $self->choose;
+  $distribution = $partition->choose;
   # [ 0.3161932258724, 0.683806774127597 ] for instance
 
 Partition the given number B<top> into addition B<n> sequences.
@@ -79,7 +79,7 @@ sub choose {
         $label++;
     }
 
-    return @distribution;
+    return \@distribution;
 }
 
 1;

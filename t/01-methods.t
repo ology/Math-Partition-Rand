@@ -12,12 +12,12 @@ my $obj = Math::Partition::Rand->new(
 );
 isa_ok $obj, 'Math::Partition::Rand';
 
-my @x = $obj->choose();
+my $x = $obj->choose();
 
-is scalar(@x), 3, 'partition';
+is scalar(@$x), 3, 'partition';
 
-my $x = 0;
-$x = $x + $_ for @x;
-is $x, 1, 'sum to 1';
+my $y = 0;
+$y = $y + $_ for @$x;
+is $y, 1, 'sum to 1';
 
 done_testing();
