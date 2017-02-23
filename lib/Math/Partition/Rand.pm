@@ -51,15 +51,14 @@ sub new {
 
 =head2 choose()
 
-  my @array = $self->choose();
+  @vector = $self->choose;
+  # [ 0.3161932258724, 0.683806774127597 ] for instance
 
-Partition the given number, B<top> into addition B<n> parts.
+Partition the given number B<top> into addition B<n> parts.
 
-Example: For top = 1, n = 3
+Example top => 1, n => 3:
 
-  [ 0.228102577310889,
-    0.0880906485615138,
-    0.683806774127597 ]
+  [ 0.228102577310889, 0.0880906485615138, 0.683806774127597 ]
 
 =cut
 
