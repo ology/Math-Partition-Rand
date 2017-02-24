@@ -1,15 +1,11 @@
 package Math::Partition::Rand;
 
-# ABSTRACT: Partition a number into addition sequences
+# ABSTRACT: Random floating point additive partitions
 
-our $VERSION = '0.03';
+our $VERSION = '0.0301';
 
 use strict;
 use warnings;
-
-=head1 NAME
-
-Math::Partition::Rand - Partition a number into addition sequences
 
 =head1 SYNOPSIS
 
@@ -29,7 +25,7 @@ A C<Math::Partition::Rand> object does one thing: it partitions a number (B<top>
 
 =head2 new()
 
-  $x = Math::Partition::Rand->new(%arguments);
+  $partition = Math::Partition::Rand->new(%arguments);
 
 Create a new C<Math::Partition::Rand> object.
 
