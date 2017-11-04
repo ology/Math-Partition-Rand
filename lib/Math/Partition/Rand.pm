@@ -52,7 +52,7 @@ sub new {
   $distribution = $partition->choose;
   # [ 0.3161932258724, 0.683806774127597 ] for instance
 
-Partition the given number B<top> into addition B<n> sequences.
+Partition the given number B<top> into B<n> addition sequences.
 
 =cut
 
