@@ -2,7 +2,7 @@ package Math::Partition::Rand;
 
 # ABSTRACT: Random floating point additive partitions
 
-our $VERSION = '0.0301';
+our $VERSION = '0.0302';
 
 use strict;
 use warnings;
@@ -61,9 +61,8 @@ sub choose {
 
     my @distribution;
 
-    my $label = 0;
-    my $top   = $self->{top};
-    my $n     = $self->{n};
+    my $top = $self->{top};
+    my $n   = $self->{n};
 
     for my $i ( 1 .. $n ) {
         my $curr = rand($top);
@@ -72,7 +71,6 @@ sub choose {
         push @distribution, $i == $n ? $top : $next;
 
         $top = $curr;
-        $label++;
     }
 
     return \@distribution;
