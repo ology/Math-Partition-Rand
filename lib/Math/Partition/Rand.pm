@@ -16,8 +16,9 @@ use warnings;
 
 =head1 DESCRIPTION
 
-A C<Math::Partition::Rand> object does one thing: it partitions a number (B<top>) into a given number of
-"random addition sequences" (B<n>).
+A C<Math::Partition::Rand> object does one thing: it partitions a number
+(B<top>) into a given number of "random addition sequences" (B<n>).  That is,
+the sequences add up to the original number.
 
 =cut
 
